@@ -1,6 +1,6 @@
 # Automated Concrete Bridge Deck Inspection Using Unmanned Aerial System–Collected Data: A Deep Learning Approach
 
-This repository contains the code for our comparative analysis of Residual Vision Transformer architectures against traditional CNNs for binary image classification. The study evaluates five models across three experimental phases: baseline comparison, hyperparameter optimization, and cross-validation.
+This repository contains the code for our comparative analysis of Residual Vision Transformer architecture against traditional CNNs for binary image classification. The study evaluates five models across three experimental phases: baseline comparison, hyperparameter optimization, and cross-validation.
 
 ## Models
 
