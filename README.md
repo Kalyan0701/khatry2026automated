@@ -38,7 +38,12 @@ This repository contains the code for our comparative analysis of Residual Visio
 ├── scripts/                # Training scripts
 │   ├── train.py            # Standard train/val/test pipeline
 │   └── train_kfold.py      # K-fold cross-validation pipeline
-├── results/                # Output directory for figures and logs
+├── notebook/
+│   └── ablation/
+│       ├──RvT-(Adding Residual Projection).ipynb
+│       ├──RvT-(No Residual Connections or Projection.ipynb
+│       └──RvT-(Only Depthwise Projection).ipynb
+├── results/                # Output directory for figures
 ├── requirements.txt
 ├── .gitignore
 └── README.md
