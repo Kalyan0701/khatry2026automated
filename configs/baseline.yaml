@@ -1,0 +1,46 @@
+# =============================================================================
+# Phase 1: Baseline Performance
+# =============================================================================
+# All models trained under standardized conditions to establish a fair baseline.
+# AdamW optimizer with identical learning rate and weight decay across all models
+# to isolate architectural differences.
+#
+# Results (Table 1 in paper):
+#   RvT:      94.05%
+#   ViT:      94.05%
+#   ResNet50: 92.86%
+#   CVT:      91.67%
+#   CNN:      85.12%
+# =============================================================================
+
+# --- Data ---
+data:
+  positive_dir: "Datasets/Positive"
+  negative_dir: "Datasets/Negative"
+  test_size: 0.20
+  val_fraction: 0.176
+  random_state: 42
+  image_size: 224
+  batch_size: 16
+  num_workers: 2
+
+# --- Model (override via --model flag) ---
+model:
+  num_classes: 2
+  in_channels: 3
+  # RvT-specific
+  embed_dim: 64
+  patch_size: 4
+  num_heads: 8
+  hidden_dim: 128
+  # ViT/CvT
+  pretrained: true
+
+# --- Training (same for ALL models in Phase 1) ---
+training:
+  optimizer: "adamw"
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  scheduler: null
+  epochs: 100
+  patience: 7

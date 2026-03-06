@@ -1,0 +1,31 @@
+# =============================================================================
+# Phase 2: Optimized ResNet50
+# =============================================================================
+# SGD with momentum (0.9) and StepLR scheduler.
+# Result: 93.45% test accuracy
+# =============================================================================
+
+data:
+  positive_dir: "Datasets/Positive"
+  negative_dir: "Datasets/Negative"
+  test_size: 0.20
+  val_fraction: 0.176
+  random_state: 42
+  image_size: 224
+  batch_size: 16
+  num_workers: 2
+
+model:
+  num_classes: 2
+  in_channels: 3
+
+training:
+  optimizer: "sgd"
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 1.0e-4
+  scheduler: "step_lr"
+  step_size: 10
+  gamma: 0.5
+  epochs: 100
+  patience: 7

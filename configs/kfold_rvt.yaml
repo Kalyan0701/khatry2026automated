@@ -1,0 +1,42 @@
+# =============================================================================
+# Phase 3: Stratified 5-Fold Cross-Validation on Tuned RvT
+# =============================================================================
+# Same tuned hyperparameters as Phase 2, but evaluated with 5-fold
+# stratified cross-validation for robust generalization assessment.
+#
+# Results:
+#   Average Validation Accuracy: 95.96% ± 0.76%
+#   Average Validation Loss:     0.1289 ± 0.0095
+# =============================================================================
+
+data:
+  positive_dir: "Datasets/Positive"
+  negative_dir: "Datasets/Negative"
+  test_size: 0.20
+  random_state: 42
+  image_size: 224
+  batch_size: 16
+  num_workers: 2
+
+model:
+  num_classes: 2
+  in_channels: 3
+  embed_dim: 64
+  patch_size: 4
+  num_heads: 8
+  hidden_dim: 128
+
+training:
+  optimizer: "adamw"
+  lr: 5.0e-4
+  weight_decay: 5.0e-5
+  scheduler: "step_lr"
+  step_size: 10
+  gamma: 0.5
+  epochs: 100
+  patience: 7
+
+kfold:
+  enabled: true
+  n_folds: 5
+  stratified: true

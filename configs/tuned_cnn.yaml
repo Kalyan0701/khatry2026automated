@@ -1,0 +1,29 @@
+# =============================================================================
+# Phase 2: Optimized CNN
+# =============================================================================
+# Adam optimizer with higher learning rate.
+# Result: 87.50% test accuracy
+# =============================================================================
+
+data:
+  positive_dir: "Datasets/Positive"
+  negative_dir: "Datasets/Negative"
+  test_size: 0.20
+  val_fraction: 0.176
+  random_state: 42
+  image_size: 224
+  batch_size: 16
+  num_workers: 2
+
+model:
+  num_classes: 2
+
+training:
+  optimizer: "adam"
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  scheduler: "step_lr"
+  step_size: 10
+  gamma: 0.5
+  epochs: 100
+  patience: 7

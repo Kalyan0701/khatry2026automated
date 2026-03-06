@@ -1,0 +1,34 @@
+# =============================================================================
+# Phase 2: Optimized RvT (best performing model)
+# =============================================================================
+# AdamW with higher LR (5e-4), lower weight decay (5e-5), and StepLR scheduler.
+# Result: 96.43% test accuracy
+# =============================================================================
+
+data:
+  positive_dir: "Datasets/Positive"
+  negative_dir: "Datasets/Negative"
+  test_size: 0.20
+  val_fraction: 0.176
+  random_state: 42
+  image_size: 224
+  batch_size: 16
+  num_workers: 2
+
+model:
+  num_classes: 2
+  in_channels: 3
+  embed_dim: 64
+  patch_size: 4
+  num_heads: 8
+  hidden_dim: 128
+
+training:
+  optimizer: "adamw"
+  lr: 5.0e-4
+  weight_decay: 5.0e-5
+  scheduler: "step_lr"
+  step_size: 10
+  gamma: 0.5
+  epochs: 100
+  patience: 7
