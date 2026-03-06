@@ -38,7 +38,6 @@ This repository contains the code for our comparative analysis of Residual Visio
 ├── scripts/                # Training scripts
 │   ├── train.py            # Standard train/val/test pipeline
 │   └── train_kfold.py      # K-fold cross-validation pipeline
-├── notebooks/              # Original Colab notebooks (reference)
 ├── results/                # Output directory for figures and logs
 ├── requirements.txt
 ├── .gitignore
