@@ -133,6 +133,6 @@ If you use this code in your research, please cite our paper:
 ## Authors
 
 - [Kalyan Khatry](https://github.com/Kalyan0701)
-- [Sayda Elmi]
+- Sayda Elmi
 - [Reihaneh Samsami](https://github.com/R-SAMSAMI)
 
