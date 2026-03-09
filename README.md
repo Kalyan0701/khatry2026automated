@@ -129,3 +129,10 @@ If you use this code in your research, please cite our paper:
   publisher={American Society of Civil Engineers}
 }
 ```
+
+## Authors
+
+- [Kalyan Khatry](https://github.com/Kalyan0701)
+- [Sayda Elmi]
+- [Reihaneh Samsami](https://github.com/R-SAMSAMI)
+
