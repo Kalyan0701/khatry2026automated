@@ -129,6 +129,11 @@ If you use this code in your research, please cite our paper:
   publisher={American Society of Civil Engineers}
 }
 ```
+## Publication
+
+Samsami, R., Elmi, A., & Khatry, S. (2026). *Automated Concrete Bridge Deck Inspection Using Uncrewed Aerial System (UAS)-Collected Data: A Deep Learning Approach*. ASCE Open.
+
+📄 [Read the full paper](https://ascelibrary.org/doi/full/10.1061/AOMJAH.AOENG-0091)
 
 ## Authors
 
