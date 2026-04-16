@@ -131,7 +131,7 @@ If you use this code in your research, please cite our paper:
 ```
 ## Publication
 
-Samsami, R., Elmi, A., & Khatry, S. (2026). *Automated Concrete Bridge Deck Inspection Using Uncrewed Aerial System (UAS)-Collected Data: A Deep Learning Approach*. ASCE Open.
+Khatry, K., Elmi, S., & Samsami, R. (2026). Automated Concrete Bridge Deck Inspection Using Unmanned Aerial System–Collected Data: A Deep Learning Approach. ASCE OPEN: Multidisciplinary Journal of Civil Engineering, 4(1), 04026004.
 
 📄 [Read the full paper](https://ascelibrary.org/doi/full/10.1061/AOMJAH.AOENG-0091)
 
